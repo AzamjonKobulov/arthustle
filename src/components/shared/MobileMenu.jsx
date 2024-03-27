@@ -8,7 +8,7 @@ export default function MobileMenu() {
 
   return (
     <div
-      className={`w-96 min-h-screen fixed top-16 sm:top-20 left-0 z-50 bg-white text-brand-gray transition-all duration-300 ${
+      className={`w-96 min-h-screen fixed top-16 sm:top-20 left-0 z-50 bg-white text-brand-gray border-t border-brand-line transition-all duration-300 ${
         isMobMenuOpen ? 'translate-x-0' : '-translate-x-full'
       }`}
     >

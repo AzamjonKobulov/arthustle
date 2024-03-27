@@ -14,7 +14,7 @@ export default function Navbar() {
   const { handleToggleMobMenu, isSearchOpen, isMobMenuOpen } = useNavbar();
 
   return (
-    <header className="h-auto sm:h-20 relative  bg-white border-b border-brand-line py-3 px-4 sm:py-4 md:px-9">
+    <header className="h-auto sm:h-20 relative bg-white border-b border-brand-line py-3 px-4 sm:py-4 md:px-9">
       {/* Mobile Menu */}
       <MobileMenu />
       {/* Mobile Menu OverLay */}

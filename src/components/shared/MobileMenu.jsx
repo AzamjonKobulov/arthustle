@@ -9,7 +9,7 @@ export default function MobileMenu() {
   return (
     <div
       className={`w-96 min-h-screen fixed top-16 sm:top-20 left-0 z-50 bg-white text-brand-gray transition-all duration-300 ${
-        isMobMenuOpen ? '' : '-translate-x-full'
+        isMobMenuOpen ? 'translate-x-0' : '-translate-x-full'
       }`}
     >
       {/* Top */}
@@ -29,7 +29,7 @@ export default function MobileMenu() {
         <NavLangDropdown />
       </div>
       {/* Bottom */}
-      <div className="custom-height overflow-auto divide-y divide-brand-gray-4 pb-12 pt-5 px-10">
+      <div className="custom-height overflow-auto divide-y divide-brand-gray-4 pb-20 pt-5 px-10">
         {/* Top Links */}
         <ul className="space-y-4 text-lg pb-6 pt-3">
           <li>

@@ -13,14 +13,14 @@ export default function TabContentDrawnImages() {
       </div>
       {/* Download */}
       <div className="lg:w-96 flex items-center pb-10 text-brand-gray lg:border-b border-brand-line lg:mt-10 pl-10">
-        <button className="w-full flex items-center gap-2 text-lg">
+        <button className="w-full group flex items-center gap-2 text-lg hover:text-brand-main-elem">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-8 h-10"
+            className="w-8 h-10 group-hover:stroke-brand-main-elem"
           >
             <path
               strokeLinecap="round"

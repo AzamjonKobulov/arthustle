@@ -30,7 +30,7 @@ export default function VideosList() {
         </div>
       </div>
       {/* <!-- Videos List --> */}
-      <div className="h-[27rem] border border-brand-gray-6 rounded-md py-4">
+      <div className="h-[26.75rem] border border-brand-gray-6 rounded-md py-2">
         <div className="video-list h-full overflow-auto divide-y divide-brand-gray-6">
           {videos.map((video, index) => (
             <Video

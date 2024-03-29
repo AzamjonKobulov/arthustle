@@ -1,5 +1,5 @@
 export default function SimilarCourse({ course }) {
-  const { img, title, duration, discount, cost, courseAuthor } = course;
+  const { img, title, duration, discount, currCost, courseAuthor } = course;
 
   return (
     <a
@@ -41,14 +41,16 @@ export default function SimilarCourse({ course }) {
       <div className="h-full flex flex-col text-brand-gray-2 space-y-6 pt-3.5 pb-5 px-3.5">
         <div className="space-y-1.5">
           {/* <!-- Cost --> */}
-          <p className="flex items-center gap-1">
-            {cost}
-            <span className="line-through text-brand-gray-6">{discount}</span>
+          <p className="flex items-center  gap-1">
+            <span className="text-black/70">{currCost}</span>
+            <span className="line-through text-black/4 text-sm">
+              {discount}
+            </span>
           </p>
-          <h5 className="text-lg text-brand-dark">{title}</h5>
+          <h5 className="text-lg text-black leading-6">{title}</h5>
         </div>
         {/* <!-- Author --> */}
-        <p>{courseAuthor}</p>
+        <p className="text-black/70">{courseAuthor}</p>
       </div>
     </a>
   );

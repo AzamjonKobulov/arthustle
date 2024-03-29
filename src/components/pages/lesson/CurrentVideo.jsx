@@ -10,7 +10,7 @@ export default function CurrentVideo() {
 
       <video
         controls
-        className="w-full max-h-[32.6875rem] lg:max-h-[26rem] h-full rounded-md mt-3.5"
+        className="w-full lg:min-h-[26.625rem] aspect-video rounded-md mt-3.5"
       >
         <source src="" type="video/mp4" />
       </video>

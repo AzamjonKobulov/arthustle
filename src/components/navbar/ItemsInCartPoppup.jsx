@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import CourseInCartPoppup from './CourseInCartPoppup';
 
-export default function ItemsInCartPoppup({ setIsCartOpen }) {
+export default function ItemsInCartPoppup() {
   return (
     <motion.div
       className="w-[27.5rem] absolute top-20 right-0 z-20 bg-white border border-brand-gray-6 rounded shadow-course-date-drop px-5 pb-5"

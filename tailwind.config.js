@@ -28,6 +28,8 @@ export default {
             5: '#B0B0B0',
             6: '#d8e3ec',
             7: '#eeeeee',
+            8: '#06233A',
+            9: '#F2F7FB',
           },
         },
       },
@@ -37,6 +39,9 @@ export default {
       },
       boxShadow: {
         course: '0 0 10px rgba(0,0,0,.2)',
+        'course-info': '0 0px 15px 3px rgba(0,0,0,.2)',
+        'user-course': '0 10px 14px 1px rgba(0,0,0,.15)',
+        'course-date-drop': '0px 10px 40px 0px #0000001A',
       },
       backgroundImage: {
         footer: "url('/assets/images/bg-footer.jpg')",

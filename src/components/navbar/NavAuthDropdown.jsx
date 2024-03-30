@@ -58,7 +58,7 @@ export default function NavAuthDropdown() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }} // Adjust the y value for smoother exit
+          exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2 }}
           className="w-64 text-left absolute z-20 origin-top-right right-0 bg-white text-sm rounded shadow-course mt-5 p-6"
         >

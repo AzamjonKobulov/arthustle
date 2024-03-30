@@ -7,6 +7,7 @@ const NavbarContext = createContext();
 export default function NavbarContextProvider({ children }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobMenuOpen, setIsMobMenuOpen] = useState(false);
+  const [itemsInCart, setItemsInCart] = useState(0);
 
   function handleOpenSearch() {
     setIsSearchOpen(true);
@@ -23,8 +24,12 @@ export default function NavbarContextProvider({ children }) {
       value={{
         isSearchOpen,
         isMobMenuOpen,
+        itemsInCart,
+
         setIsSearchOpen,
         setIsMobMenuOpen,
+        setItemsInCart,
+
         handleOpenSearch,
         handleToggleMobMenu,
       }}

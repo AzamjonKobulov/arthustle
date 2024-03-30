@@ -9,6 +9,7 @@ import MobileMenu from '../shared/MobileMenu';
 import MobileMenuOverlay from '../shared/MobileMenuOverlay';
 import SearchBar from '../navbar/SearchBar';
 import LogoAndLinks from '../navbar/LogoAndLinks';
+import Cart from '../navbar/Cart';
 
 export default function Navbar() {
   const { handleToggleMobMenu, isSearchOpen, isMobMenuOpen } = useNavbar();
@@ -72,20 +73,22 @@ export default function Navbar() {
         )}
 
         {/* Search & Auth & Lang */}
-        <div className="relative flex items-center gap-7">
+        <div className="relative flex items-center gap-5">
           <SearchBar />
-          <div className="hidden lg:flex items-center gap-7">
+          <div className="hidden lg:flex items-center gap-5">
             <Link
               to="/"
               className="group uppercase hover:text-brand-main-elem text-xs mt-2"
             >
-              become a teacher
+              Стать учителем
               <div className="w-0 mx-auto h-0.5 bg-brand-main-elem group-hover:w-full transition-all duration-300 mt-2"></div>
             </Link>
             {/* Auth Dropdown */}
             <NavAuthDropdown />
             {/* Lang Dropdown */}
             <NavLangDropdown />
+            {/* Cart */}
+            <Cart />
           </div>
         </div>
       </nav>

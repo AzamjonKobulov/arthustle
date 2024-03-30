@@ -13,13 +13,19 @@ export default function LogoAndLinks() {
       <ul className="flex items-center gap-7 text-xs pt-3">
         <li>
           <Link to="/" className="group uppercase hover:text-brand-main-elem">
-            courses
+            Видеокурсы
             <div className="w-0 mx-auto h-0.5 bg-brand-main-elem group-hover:w-full transition-all duration-300 mt-2"></div>
           </Link>
         </li>
         <li>
           <Link to="/" className="group uppercase hover:text-brand-main-elem">
-            blog
+            Блог
+            <div className="w-0 mx-auto h-0.5 bg-brand-main-elem group-hover:w-full transition-all duration-300 mt-2"></div>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className="group uppercase hover:text-brand-main-elem">
+            Мероприятия
             <div className="w-0 mx-auto h-0.5 bg-brand-main-elem group-hover:w-full transition-all duration-300 mt-2"></div>
           </Link>
         </li>

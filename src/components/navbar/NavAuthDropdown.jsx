@@ -27,21 +27,26 @@ export default function NavAuthDropdown() {
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <button
         type="button"
-        className="w-20 inline-flex justify-center items-center gap-2 uppercase text-sm"
+        className="relative inline-flex items-center gap-1.5 uppercase text-sm"
         onClick={toggleDropdown}
       >
-        <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden">
-          <img
-            src="/assets/images/img-user.jpg"
-            alt="User Image"
-            className="w-full h-full object-cover"
-          />
+        <div className="relative">
+          <div className="w-10 h-10 shrink-0 rounded-full overflow-hidden">
+            <img
+              src="/assets/images/img-avatar.jpg"
+              alt="User Image"
+              className="w-full h-full object-cover"
+            />
+            <div className="w-2.5 h-2.5 shrink-0 absolute right-0 -top-0 z-10 grid place-content-center bg-white rounded-full">
+              <span className="w-2 h-2 bg-brand-alert rounded-full"></span>
+            </div>
+          </div>
         </div>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          className={`w-4 h-4 fill-black transition-all duration-300 ${
+          className={`w-3 h-3 fill-brand-gray-2 transition-all duration-300 ${
             isOpen ? 'rotate-180' : ''
           }`}
         >
@@ -55,8 +60,10 @@ export default function NavAuthDropdown() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }} // Adjust the y value for smoother exit
           transition={{ duration: 0.2 }}
-          className="w-64 text-left absolute z-20 origin-top-right right-0 bg-white text-sm rounded shadow-course mt-1 p-6"
+          className="w-64 text-left absolute z-20 origin-top-right right-0 bg-white text-sm rounded shadow-course mt-5 p-6"
         >
+          {/* <!-- Triangular --> */}
+          <div className="w-4 h-4 absolute right-7 -top-2 z-10 bg-white border-t border-l border-brand-gray-6 rotate-45"></div>
           <div
             className="py-1"
             role="menu"

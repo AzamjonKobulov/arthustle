@@ -29,17 +29,17 @@ export default function NavLangDropdown() {
   }, [dropdownRef]);
 
   return (
-    <div className="relative inline-block text-left pt-1" ref={dropdownRef}>
+    <div className="relative inline-block text-left" ref={dropdownRef}>
       <button
         type="button"
-        className="w-20 inline-flex justify-center items-center gap-1 uppercase text-sm"
+        className="inline-flex justify-center items-center gap-1 uppercase text-xs"
         onClick={toggleDropdown}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="w-5 h-5 fill-black"
+          className="w-3.5 h-3.5 fill-black"
         >
           <path
             fillRule="evenodd"
@@ -52,7 +52,7 @@ export default function NavLangDropdown() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          className={`w-3 h-3 fill-black transition-all duration-300 ${
+          className={`w-3 h-3 fill-brand-gray-2 transition-all duration-300 ${
             isOpen ? 'rotate-180' : ''
           }`}
         >

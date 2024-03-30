@@ -9,7 +9,7 @@ import MobileMenu from '../shared/MobileMenu';
 import MobileMenuOverlay from '../shared/MobileMenuOverlay';
 import SearchBar from '../navbar/SearchBar';
 import LogoAndLinks from '../navbar/LogoAndLinks';
-import Cart from '../navbar/Cart';
+import CartPoppup from '../navbar/CartPoppup';
 
 export default function Navbar() {
   const { handleToggleMobMenu, isSearchOpen, isMobMenuOpen } = useNavbar();
@@ -88,7 +88,7 @@ export default function Navbar() {
             {/* Lang Dropdown */}
             <NavLangDropdown />
             {/* Cart */}
-            <Cart />
+            <CartPoppup />
           </div>
         </div>
       </nav>

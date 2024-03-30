@@ -12,6 +12,7 @@ export default {
       colors: {
         brand: {
           'main-elem': '#01acb7',
+          'main-elem-darker': '#0B7880',
           'light-elem': '#54eedb',
           'main-text': '#979797',
           dark: '#000000B3',

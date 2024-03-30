@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavbar } from '../../contexts/NavbarContext';
-import ItemsInCart from './ItemsInCart';
+import ItemsInCartPoppup from './ItemsInCartPoppup';
 
-export default function Cart() {
+export default function CartPoppup() {
   const { itemsInCart, setItemsInCart } = useNavbar();
   const [isCartOpen, setIsCartOpen] = useState(false);
 
@@ -77,7 +77,7 @@ export default function Cart() {
           +
         </button>
       </div>
-      {isCartOpen && <ItemsInCart setIsCartOpen={setIsCartOpen} />}
+      {isCartOpen && <ItemsInCartPoppup setIsCartOpen={setIsCartOpen} />}
     </div>
   );
 }

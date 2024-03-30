@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default function CourseInCart() {
+export default function CourseInCartPoppup() {
   return (
     <div className="flex flex-col sm:flex-row md:items-center gap-8 py-5">
       {/* <!-- Course Image --> */}
@@ -56,13 +54,11 @@ export default function CourseInCart() {
             </svg>
             <span>2 месяца</span>
           </div>
-          <div>
-            <div className="flex items-center gap-2.5">
-              <p className="text-brand-main-elem font-medium">0,99$</p>
-              <p className="font-light">
-                <span className="line-through">14.99 $</span>
-              </p>
-            </div>
+          <div className="flex items-center gap-2.5">
+            <p className="text-brand-main-elem font-medium">0,99$</p>
+            <p className="font-light">
+              <span className="line-through">14.99 $</span>
+            </p>
           </div>
         </div>
       </div>
